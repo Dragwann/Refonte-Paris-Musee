@@ -1,0 +1,189 @@
+body {
+  width: 393px;
+  font-family: "Poppins", sans-serif;
+  background: #dad8d8;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.hero{
+    padding: 12px;
+    background-color: #5E6FB3; 
+    color: white;
+}
+
+.cardcontainer{
+    color: white;
+    padding: 12px;
+    display: flex;
+    gap: 36px;
+    background: linear-gradient(to bottom, #5E6FB3, #F0F5FD);
+}
+
+.actucontainer{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    background-color: #F0F5FD;
+}
+
+.actubtn{
+    height: 32px;
+    width: 150px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.reseau{
+    padding: 12px;
+    gap: 36px;
+    background-color: #F0F5FD;
+}
+
+.selector{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.map{
+    width: 194px;
+    margin-top: 20px;
+}
+
+.adresswrapper{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-left: 24px;
+    background-color: white;
+}
+.reseau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reseaubtn{
+    height: 32px;
+    width: 300px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.Publics{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    background-color: #F0F5FD;
+}
+
+.publicwrapper{
+    padding: 40px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.publicbtn{
+    height: 32px;
+    width: 300px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.greyrectangle{
+  width: 120px;
+  height: 6px;       
+  background-color: grey;
+  margin: 20px auto;
+  border-radius: 3px;  
+}
+.bluerectangle{
+  width: 120px;
+  height: 6px;       
+  background-color: #5E6FB3;
+  margin: 20px auto;
+  border-radius: 3px;  
+}
+
+.parislogo{
+    max-width: 81px;
+    max-height: 52px;
+}
+
+.carou{
+    text-align: center;
+    display: flex;
+    padding: 40px 24px;
+    /*propre au système de scroll*/
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; 
+    /*fin scroll*/
+    background-color: #F0F5FD;
+}
+
+.carou::-webkit-scrollbar{ display:none; }
+
+.carou div{
+    position: static;
+    background: #fff;
+    box-shadow: 0 10px 25px #000;
+}
+    /*celui à l'avant*/
+.carou .front {
+    width: 236px;
+    z-index: 3;
+}
+.carou .front img{
+    height: 152px;
+    width: 236px;
+}
+    /*fin avant*/
+    /*ceux derrière*/
+.carou .back{
+    max-width: 180px;
+    opacity: 64%;
+    margin-top: 10px;
+}
+.carou .back img{
+    height: 116px;
+    width: 180px;
+}
+    /*fin arrière*/
+/* fin caroussel */
+
+.morebtn{
+    height: 32px;
+    width: 150px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.expo{
+    display: flex;
+    justify-content: center;
+}
+
+.expobtn{
+    height: 48px;
+    width: 275px;
+    background-color: #5E6FB3;
+    color: white;
+    padding: 5px 12px;
+}
+
