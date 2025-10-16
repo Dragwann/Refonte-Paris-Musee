@@ -1,0 +1,421 @@
+body {
+  width: 393px;
+  font-family: "Libre Franklin", sans-serif;
+  background: #dad8d8;
+}
+
+
+/* css navbar */
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #5e6fb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 58px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 10.5px;
+  font-size: calc(0.5rem + 1.5vw);
+}
+
+nav ul {
+  position: fixed;
+  right: -100%;
+  top: 121px;
+  flex-direction: column;
+  background-color: #f0f5fd;
+  width: 100%;
+  text-align: center;
+  transition: 0.25s;
+  padding: 16px 0;
+}
+
+nav li {
+  padding: 30px 0;
+}
+nav.active ul {
+  right: 0;
+  top: 121px;
+}
+
+#icons {
+  display: block;
+}
+
+#icons::before {
+  content: "\2630";
+  font-size: 20px;
+  color: white;
+}
+.active #icons::before {
+  content: "\2715";
+}
+
+.logo-menu-burger {
+  display: block;
+  margin: 0 auto;
+  padding-top: 52px;
+  width: 180px;
+  height: 57px;
+}
+
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 60px;
+  }
+}
+/* css navbar */
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.hero{
+    padding: 12px;
+    background-color: #5E6FB3; 
+    color: white;
+}
+
+.cardcontainer{
+    color: white;
+    padding: 12px;
+    display: flex;
+    gap: 36px;
+    background: linear-gradient(to bottom, #5E6FB3, #F0F5FD);
+}
+
+.actucontainer{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    background-color: #F0F5FD;
+}
+
+.actubtn{
+    height: 32px;
+    width: 150px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.reseau{
+    padding: 12px;
+    gap: 36px;
+    background-color: #F0F5FD;
+}
+
+.selector{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.map{
+    width: 194px;
+    margin-top: 20px;
+}
+
+.adresswrapper{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-left: 24px;
+    background-color: white;
+}
+.reseau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reseaubtn{
+    height: 32px;
+    width: 300px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.Publics{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    background-color: #F0F5FD;
+}
+
+.publicwrapper{
+    padding: 40px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.publicbtn{
+    height: 32px;
+    width: 300px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.greyrectangle{
+  width: 120px;
+  height: 6px;       
+  background-color: grey;
+  margin: 20px auto;
+  border-radius: 3px;  
+}
+.bluerectangle{
+  width: 120px;
+  height: 6px;       
+  background-color: #5E6FB3;
+  margin: 20px auto;
+  border-radius: 3px;  
+}
+
+.parislogo{
+    max-width: 81px;
+    max-height: 52px;
+}
+
+.carou{
+    text-align: center;
+    display: flex;
+    padding: 40px 24px;
+    /*propre au système de scroll*/
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; 
+    /*fin scroll*/
+    background-color: #F0F5FD;
+}
+
+.carou::-webkit-scrollbar{ display:none; }
+
+.carou div{
+    position: static;
+    background: #fff;
+    box-shadow: 0 10px 25px #000;
+}
+    /*celui à l'avant*/
+.carou .front {
+    width: 236px;
+    z-index: 3;
+}
+.carou .front img{
+    height: 152px;
+    width: 236px;
+}
+    /*fin avant*/
+    /*ceux derrière*/
+.carou .back{
+    max-width: 180px;
+    opacity: 64%;
+    margin-top: 10px;
+}
+.carou .back img{
+    height: 116px;
+    width: 180px;
+}
+    /*fin arrière*/
+/* fin caroussel */
+
+.morebtn{
+    height: 32px;
+    width: 150px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 12px;
+    border-color: #5E6FB3;
+}
+
+.expo{
+    display: flex;
+    justify-content: center;
+}
+
+.expobtn{
+    height: 48px;
+    width: 275px;
+    background-color: #5E6FB3;
+    color: white;
+    padding: 5px 12px;
+}
+
+/* debut css footer */
+.footer {
+  background-color: #f0f5fd;
+  padding: 76px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  height: 57px;
+  margin: 0 auto;
+}
+
+.title {
+  padding-top: 52px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-input {
+  width: 195px;
+  padding: 12px 0px;
+  border: none;
+  border-bottom: 2px solid #2c3e50;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.send-button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  left: 192px;
+}
+
+.subscribe-button {
+  padding: 16px 12px;
+  margin-left: 28px;
+  background-color: white;
+  border: 2px solid #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: center;
+}
+
+.line {
+  border-top: 2px solid #000000;
+  margin-top: 44px;
+}
+
+.info-footer {
+  padding: 16px 0px;
+  font-size: 12px;
+  color: #000000;
+  line-height: 60px;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #acacac;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+#instagram {
+  width: 30px;
+  height: 30px;
+}
+#facebook {
+  width: 30px;
+  height: 30px;
+}
+#tiktok {
+  width: 30px;
+  height: 30px;
+}
+#linkedin {
+  width: 32px;
+  height: 32px;
+}
+#youtube {
+  width: 28px;
+  height: 28px;
+}
+
+.line-2 {
+  border-top: 2px solid #000000;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.title-and-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 28px;
+  margin-bottom: 16px;
+}
+
+.donation-icon {
+  width: 68px;
+  height: 68px;
+}
+
+.donation-button {
+  padding: 16px 12px;
+  margin-left: 28px;
+  background-color: white;
+  border: 2px solid #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  color: #474f86;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: center;
+}
+/* fin css */

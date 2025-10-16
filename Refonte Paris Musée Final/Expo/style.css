@@ -1,0 +1,432 @@
+body {
+  width: 393px;
+  font-family: "Libre Franklin", sans-serif;
+  background: #dad8d8;
+}
+
+/* css navbar */
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #5e6fb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 58px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 10.5px;
+  font-size: calc(0.5rem + 1.5vw);
+}
+
+nav ul {
+  position: fixed;
+  right: -100%;
+  top: 121px;
+  flex-direction: column;
+  background-color: #f0f5fd;
+  width: 100%;
+  text-align: center;
+  transition: 0.25s;
+  padding: 16px 0;
+}
+
+nav li {
+  padding: 30px 0;
+}
+nav.active ul {
+  right: 0;
+  top: 121px;
+}
+
+#icons {
+  display: block;
+}
+
+#icons::before {
+  content: "\2630";
+  font-size: 20px;
+  color: white;
+}
+.active #icons::before {
+  content: "\2715";
+}
+
+.logo-menu-burger {
+  display: block;
+  margin: 0 auto;
+  padding-top: 52px;
+  width: 180px;
+  height: 57px;
+}
+
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 60px;
+  }
+}
+/* css navbar */
+
+.pagetop{
+    padding: 12px;
+    background-color: #E4EDFB;
+    color: #14245A;
+}
+
+.encours{
+    display: flex;
+    gap: 40px;
+    padding: 24px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.encourbtn{
+    height: 44px;
+    width: 90px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 5px;
+    border-color: #5E6FB3;
+}
+.avenirbtn{
+    height: 44px;
+    width: 80px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 5px;
+    border-color: #5E6FB3;
+}
+
+.Mdropdown {
+    padding: 12px;
+    display: flex;
+    background-color: #E4EDFB;
+    gap: 20px;
+}
+
+.Mdropdown button{
+    height: 44px;
+    width: 150px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 5px;
+    border-color: #5E6FB3;
+}
+
+a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px 10px;
+}
+
+.Mdropdown .content{
+    display: none;
+    position: absolute;
+    background-color: #F0F5FD;
+    max-width: 196px;
+    box-shadow: 2px 2px 5px #5E6FB3;
+}
+
+.Mdropdown:active .content{
+    display: block;
+}
+
+.Mdropdown {
+    padding: 12px;
+    display: flex;
+    background-color: #E4EDFB;
+    gap: 20px;
+}
+
+.Pdropdown {
+    padding: 12px;
+    display: flex;
+    background-color: #E4EDFB;
+    gap: 140px;
+}
+
+.Pdropdown button{
+    height: 44px;
+    width: 150px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 5px;
+    border-color: #5E6FB3;
+}
+
+.Pdropdown .content{
+    display: none;
+    position: absolute;
+    background-color: #F0F5FD;
+    max-width: 196px;
+    box-shadow: 2px 2px 5px #5E6FB3;
+}
+
+.Pdropdown:active .content{
+    display: block;
+}
+
+.Tdropdown {
+    padding: 12px;
+    display: flex;
+    background-color: #E4EDFB;
+    gap: 28px;
+}
+
+.Tdropdown button{
+    height: 44px;
+    width: 150px;
+    background-color: #F0F5FD;
+    color: #5E6FB3;
+    padding: 5px 5px;
+    border-color: #5E6FB3;
+}
+
+.Tdropdown .content{
+    display: none;
+    position: absolute;
+    background-color: #F0F5FD;
+    max-width: 196px;
+    min-width: 196px;
+    box-shadow: 2px 2px 5px #5E6FB3;
+}
+
+.Tdropdown:active .content{
+    display: block;
+}
+
+.event{
+  position: relative;
+    padding: 24px;
+    background-color: #F0F5FD;
+}
+
+.eventimg {
+  width: 100%;
+  height: 198px;
+  max-width: 100%;
+  display: block;
+}
+
+.eventcard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventdate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow{
+    height: 24px;
+    font-weight: 24px;
+}
+
+.eventinfo{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.moreinfo{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24px;
+    margin-right:  24px;
+}
+
+.eventtag{
+    height: 44px;
+    width: 78px;
+    background-color: #5E6FB3;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    top: 36px;
+    left: 48px;
+}
+
+
+/* debut css footer */
+
+.footer {
+  background-color: #f0f5fd;
+  padding: 76px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  height: 57px;
+  margin: 0 auto;
+}
+
+.title {
+  padding-top: 52px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-input {
+  width: 195px;
+  padding: 12px 0px;
+  border: none;
+  border-bottom: 2px solid #2c3e50;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.send-button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  left: 192px;
+}
+
+.subscribe-button {
+  padding: 16px 12px;
+  margin-left: 28px;
+  background-color: white;
+  border: 2px solid #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: center;
+}
+
+.line {
+  border-top: 2px solid #000000;
+  margin-top: 44px;
+}
+
+.info-footer {
+  padding: 16px 0px;
+  font-size: 12px;
+  color: #000000;
+  line-height: 60px;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #acacac;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+#instagram {
+  width: 30px;
+  height: 30px;
+}
+#facebook {
+  width: 30px;
+  height: 30px;
+}
+#tiktok {
+  width: 30px;
+  height: 30px;
+}
+#linkedin {
+  width: 32px;
+  height: 32px;
+}
+#youtube {
+  width: 28px;
+  height: 28px;
+}
+
+.line-2 {
+  border-top: 2px solid #000000;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.title-and-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 28px;
+  margin-bottom: 16px;
+}
+
+.donation-icon {
+  width: 68px;
+  height: 68px;
+}
+
+.donation-button {
+  padding: 16px 12px;
+  margin-left: 28px;
+  background-color: white;
+  border: 2px solid #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  color: #474f86;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: center;
+}
+/* fin css footer */

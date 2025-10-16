@@ -1,0 +1,402 @@
+body{
+    margin: 0;
+    width: 393px;
+    background-color: grey;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+
+/* css navbar */
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #5e6fb3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 58px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 10.5px;
+  font-size: calc(0.5rem + 1.5vw);
+}
+
+nav ul {
+  position: fixed;
+  right: -100%;
+  top: 121px;
+  flex-direction: column;
+  background-color: #f0f5fd;
+  width: 100%;
+  text-align: center;
+  transition: 0.25s;
+  padding: 16px 0;
+}
+
+nav li {
+  padding: 30px 0;
+}
+nav.active ul {
+  right: 0;
+  top: 121px;
+}
+
+#icons {
+  display: block;
+}
+
+#icons::before {
+  content: "\2630";
+  font-size: 20px;
+  color: white;
+}
+.active #icons::before {
+  content: "\2715";
+}
+
+.logo-menu-burger {
+  display: block;
+  margin: 0 auto;
+  padding-top: 52px;
+  width: 180px;
+  height: 57px;
+}
+
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 60px;
+  }
+}
+/* css navbar */
+
+/*début détail actu*/
+.barre{
+    width: 48px;
+    height: 2px;
+    background-color: #3C1DFF;
+}
+
+    /*début titre*/
+
+.titre{
+    height: 323px;
+    background-color: #C9CCCD;
+    box-shadow: 0px 0px 20px 0px #000;
+}
+.titre .container_t{
+    margin: 0px 32px;
+}
+.titre .barre{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+}
+        /* début nomenclature texte*/
+.titre h2{
+    font-size: 32px;
+    color: #14245A;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.titre h6{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.titre h4{
+    font-size: 20px;
+    margin-top: 5px;
+}
+        /* fin nomenclature texte*/
+    /*fin titre*/
+
+
+    /*début info */
+
+.info{
+    position: relative;
+    /* margin: 20px 10px; */
+    background-color: #DAD3D3;
+    padding-bottom: 8px;
+}
+
+.info h3{
+    margin: 8px 0px;
+    color: #14245A;
+    font-size: 32px;
+}
+.info h5{
+    margin: 4px 0px;
+    color: #14245A;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+        /*début tarif*/
+.tarif{
+    padding-top: 20px;
+    margin-left: 16px;    
+}
+
+.tarif .barre{
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+        /*fin tarif*/
+        /*début text*/
+.text{
+    padding-top: 20px;
+    margin-left: 16px;    
+}
+
+.text .barre{
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+.text ul{
+    margin-top: 0;
+    padding-left: 28px;
+}
+
+.text li{
+    color: #14245A;
+    font-size: 14px;
+}
+
+.text button{
+    width: 238px;
+    height: 44px;
+    padding: 12px 16px;
+    color: #fff;
+    background-color: #474F86;
+    border: none;
+}
+        /*fin text*/
+.info p{
+    font-size: 14px;
+    padding: 4px 20px;
+}
+    /*fin info*/
+    /*début image*/
+.image{
+    position: relative;
+    padding-bottom: 0;
+    /* margin-bottom: 5px; */
+    background-color: white;
+}
+.image h2{
+    margin-left: 32px;
+    background: linear-gradient(90deg, #14245A, #2B4DC0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.image .barre{
+    margin-left: 32px;
+}
+.image .card{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 173px;
+    height: 145px;
+    background: #fff;
+    z-index: 2; 
+}
+.image .card p{
+    font-size: 14px;
+    justify-content: center;
+    padding: 20px;
+}
+.image .card .more{
+    width: 165px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    background: #3C3C43;
+    color: #fff;
+    padding: 0px 4px;
+}
+.image .card .more img{
+    width: 8px;
+    height: 13px;
+    
+}
+    /*fin image*/
+/*fin détail actu*/
+
+
+/* debut css footer */
+
+.footer {
+  background-color: #f0f5fd;
+  padding: 76px 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 180px;
+  height: 57px;
+  margin: 0 auto;
+}
+
+.title {
+  padding-top: 52px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-input {
+  width: 195px;
+  padding: 12px 0px;
+  border: none;
+  border-bottom: 2px solid #2c3e50;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.send-button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  left: 192px;
+}
+
+.subscribe-button {
+  padding: 16px 12px;
+  margin-left: 28px;
+  background-color: white;
+  border: 2px solid #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: center;
+}
+
+.line {
+  border-top: 2px solid #000000;
+  margin-top: 44px;
+}
+
+.info-footer {
+  padding: 16px 0px;
+  font-size: 12px;
+  color: #000000;
+  line-height: 60px;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #acacac;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+#instagram {
+  width: 30px;
+  height: 30px;
+}
+#facebook {
+  width: 30px;
+  height: 30px;
+}
+#tiktok {
+  width: 30px;
+  height: 30px;
+}
+#linkedin {
+  width: 32px;
+  height: 32px;
+}
+#youtube {
+  width: 28px;
+  height: 28px;
+}
+
+.line-2 {
+  border-top: 2px solid #000000;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+.title-and-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 28px;
+  margin-bottom: 16px;
+}
+
+.donation-icon {
+  width: 68px;
+  height: 68px;
+}
+
+.donation-button {
+  padding: 16px 12px;
+  margin-left: 28px;
+  background-color: white;
+  border: 2px solid #2c3e50;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Libre Franklin", sans-serif;
+  color: #474f86;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: center;
+}
+/* fin css footer */
