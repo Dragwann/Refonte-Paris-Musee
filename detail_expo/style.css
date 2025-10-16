@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    width: 393px;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+/*début détail actu*/
+.barre{
+    width: 48px;
+    height: 2px;
+    background-color: #3C1DFF;
+}
+
+    /*début titre*/
+
+.titre{
+    height: 323px;
+    background-color: #C9CCCD;
+    box-shadow: 0px 0px 20px 0px #000;
+}
+.titre .container_t{
+    margin: 0px 32px;
+}
+.titre .barre{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+}
+        /* début nomenclature texte*/
+.titre h2{
+    font-size: 32px;
+    color: #14245A;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.titre h6{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.titre h4{
+    font-size: 20px;
+    margin-top: 5px;
+}
+        /* fin nomenclature texte*/
+    /*fin titre*/
+
+
+    /*début info */
+
+.info{
+    position: relative;
+    margin: 20px 10px;
+    background-color: #DAD3D3;
+    padding-bottom: 8px;
+}
+
+.info h3{
+    margin: 8px 0px;
+    color: #14245A;
+    font-size: 32px;
+}
+.info h5{
+    margin: 4px 0px;
+    color: #14245A;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+        /*début tarif*/
+.tarif{
+    padding-top: 20px;
+    margin-left: 16px;    
+}
+
+.tarif .barre{
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+        /*fin tarif*/
+        /*début text*/
+.text{
+    padding-top: 20px;
+    margin-left: 16px;    
+}
+
+.text .barre{
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+.text ul{
+    margin-top: 0;
+    padding-left: 28px;
+}
+
+.text li{
+    color: #14245A;
+    font-size: 14px;
+}
+
+.text button{
+    width: 238px;
+    height: 44px;
+    padding: 12px 16px;
+    color: #fff;
+    background-color: #474F86;
+    border: none;
+}
+        /*fin text*/
+.info p{
+    font-size: 14px;
+    padding: 4px 20px;
+}
+    /*fin info*/
+    /*début image*/
+.image{
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+.image h2{
+    margin-left: 32px;
+    background: linear-gradient(90deg, #14245A, #2B4DC0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.image .barre{
+    margin-left: 32px;
+}
+.image .card{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 173px;
+    height: 145px;
+    background: #fff;
+    z-index: 2; 
+}
+.image .card p{
+    font-size: 14px;
+    justify-content: center;
+    padding: 20px;
+}
+.image .card .more{
+    width: 165px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    background: #3C3C43;
+    color: #fff;
+    padding: 0px 4px;
+}
+.image .card .more img{
+    width: 8px;
+    height: 13px;
+    
+}
+    /*fin image*/
+/*fin détail actu*/

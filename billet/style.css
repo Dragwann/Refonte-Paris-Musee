@@ -1,0 +1,121 @@
+body{
+    width: 393px;
+    margin: 0;
+    font-family: "Libre Franklin", sans-serif;
+}
+/*début page billet*/
+.card{
+    background: #5E6FB3;
+    text-align: center;
+    padding-bottom: 100px;
+}
+    /* variant page*/
+
+#rose{
+    background: #F99FBA;
+}
+#vert{
+    background: #7ED7AE;
+}
+    /* fin variant page*/
+.card h3{
+    color: #fff;
+    font-size: 27px;
+}
+    /* variant page*/
+#rose h3{
+    color: #000;
+}
+#vert h3{
+    color: #000;
+}
+    /* fin variant page*/
+
+.card button{
+    border: none;
+    padding: 4px 12px;
+    font-size: 27px;
+    position: flex;
+    color: #5E6FB3;
+    background-color: #fff;
+}
+    /* variant page*/
+#rose button{
+    color: #F99FBA;
+    background-color: #000;
+}
+#vert button{
+    color: #7ED7AE;
+    background-color: #000;
+}
+    /* fin variant page*/
+    /*début contenuer carte*/
+.card .container-card{
+    margin-top: 10px;
+    position: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card .container-card .arrow{
+    height: 18px;
+    width: 11px;
+}
+    /*fin contenuer carte*/
+    /*début contenuer des points*/
+.card .dot{
+    position: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .dot .page{
+    width: 20px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-left: 3px;
+}
+.card .dot .other{
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    border-radius: 12px;
+    margin-left: 3px;
+}
+    /*début contenuer des points*/
+    
+.card h4{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+    /* variant page*/
+#rose h4{
+    color: #000;
+}
+#vert h4{
+    color: #000;
+}
+    /* fin variant page*/
+    /*début bouton sub*/
+.card .sub{
+    width: 131px;
+    height: 44px;
+    padding: 10px;
+    gap: 10px;
+    font-size: 14px;
+    background-color: #474F86;
+    color: #fff;
+}
+    /* variant page*/
+#rose .sub{
+    background-color: #ED4680;
+    color:#fff;
+}
+#vert .sub{
+    background-color: #26A371;
+    color:#fff;
+}
+    /* fin variant page*/
+    /* boutton sub */
