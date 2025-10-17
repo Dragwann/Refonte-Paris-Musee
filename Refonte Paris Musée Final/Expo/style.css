@@ -86,10 +86,15 @@ nav.active ul {
     color: #14245A;
 }
 
+.number{
+  font-size: 52px;
+}
+
 .encours{
     display: flex;
+    align-items: center;
     gap: 40px;
-    padding: 24px;
+    padding: 12px;
 }
 
 .btn{

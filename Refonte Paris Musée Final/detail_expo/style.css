@@ -173,11 +173,13 @@ nav.active ul {
 .text ul{
     margin-top: 0;
     padding-left: 28px;
+    list-style: dot;
 }
 
 .text li{
     color: #14245A;
     font-size: 14px;
+    list-style-type: circle;
 }
 
 .text button{

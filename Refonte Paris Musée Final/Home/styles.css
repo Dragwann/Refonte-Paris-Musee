@@ -259,9 +259,10 @@ a{
 .expobtn{
     height: 48px;
     width: 275px;
-    background-color: #5E6FB3;
+    background-color: #474F86;
     color: white;
     padding: 5px 12px;
+    border: none;
 }
 
 /* debut css footer */
